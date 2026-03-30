@@ -73,7 +73,7 @@ transcriptome[1:5,]
 # delete X infront of column name (start numbers) by R Name Rule
 colnames(transcriptome) <- sub("^X(\\d)", "\\1", colnames(transcriptome))
 
-transcriptome$Gene_ID <- as.character(transcriptome$Gene_ID)  # id는 문자열로 반영
+transcriptome$Gene_ID <- as.character(transcriptome$Gene_ID)  # id is reflected to string.
 str(transcriptome)
 
 transcriptome_info <- transcriptome %>% select(c(1, 81:118))
