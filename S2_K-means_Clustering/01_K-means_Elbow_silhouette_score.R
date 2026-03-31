@@ -42,7 +42,7 @@ dev.off()
 set.seed(1218220)
 res <- kmeans(omics, centers=4)
 
-# 시각화
+# visualization
 sil <- silhouette(res$cluster, dist(omics))
 
 p2 <- fviz_silhouette(sil)
